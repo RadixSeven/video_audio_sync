@@ -28,12 +28,20 @@ SyncNet demo:
 python demo_syncnet.py --videofile data/example.avi --tmp_dir /path/to/temp/directory
 ```
 
-Check that this script returns:
+Check that this script returns something like:
 ```
 AV offset:      3 
 Min dist:       5.353
 Confidence:     10.021
 ```
+
+(On my system, it's slightly different:
+```
+AV offset:      3
+Min dist:       5.348
+Confidence:     10.081
+```
+)
 
 Full pipeline:
 ```
