@@ -7,12 +7,19 @@ This repository contains the demo for the audio-to-video synchronisation network
 Please cite the paper below if you make use of the software. 
 
 ## Dependencies
+You must install CUDA. On Windows, you can install it with `scoop`. On Linux, investigate what
+version is available for your distribution.
+
+You must install the CUDA version of PyTorch. Unfortunately, that requires a specific index URL, so cannot be
+installed from requirements.txt. You can get the appropriate command for your system from the 
+[PyTorch website](https://pytorch.org/get-started/locally/).
 ```
+# Modify the line below to match the instructions you get from the PyTorch website
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 ```
 
-In addition, `ffmpeg` is required.
-
+In addition, `ffmpeg` is required. You can install it on Windows with `scoop`. On Linux, use your package manager.
 
 ## Demo
 
