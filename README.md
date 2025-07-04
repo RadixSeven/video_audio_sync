@@ -15,7 +15,7 @@ installed from requirements.txt. You can get the appropriate command for your sy
 [PyTorch website](https://pytorch.org/get-started/locally/).
 ```
 # Modify the line below to match the instructions you get from the PyTorch website
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 pip install -r requirements.txt
 ```
 
