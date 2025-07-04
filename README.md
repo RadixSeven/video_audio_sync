@@ -21,6 +21,9 @@ pip install -r requirements.txt
 
 In addition, `ffmpeg` is required. You can install it on Windows with `scoop`. On Linux, use your package manager.
 
+On Windows, you will also need `bash` (the latest version in 2025 is the
+`scoop msys` package, but that is over three years old) and `wget`.
+
 ## Demo
 
 SyncNet demo:
