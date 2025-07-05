@@ -51,6 +51,13 @@ for tidx, track in enumerate(tracks):
 	fconfm  = signal.medfilt(fconf,kernel_size=9)
 
 	for fidx, frame in enumerate(track['track']['frame'].tolist()) :
+		# Not sure why we're getting an out of bounds on fconfm[fidx] but this
+		# will skip it
+		if fidx >= len(fconf):
+			# `break` would be more efficient, but I haven't checked for
+			# side effects, so I want to keep everything as much the
+			# same as possible.
+			continue
 		faces[frame].append({'track': tidx, 'conf':fconfm[fidx], 's':track['proc_track']['s'][fidx], 'x':track['proc_track']['x'][fidx], 'y':track['proc_track']['y'][fidx]})
 
 # ==================== ADD DETECTIONS TO VIDEO ====================
