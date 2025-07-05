@@ -24,6 +24,12 @@ In addition, `ffmpeg` is required. You can install it on Windows with `scoop`. O
 On Windows, you will also need `bash` (the latest version in 2025 is the
 `scoop msys` package, but that is over three years old) and `wget`.
 
+## Bugs
+
+There are lots of deprecation warnings when you run the face extraction
+pipeline because the `sf3d` fork this is based on has not been updated since
+August, 2019. Future maintenance will need to fix this.
+
 ## Demo
 
 Before you run the demo you must run `download_model.sh`. It also downloads the
